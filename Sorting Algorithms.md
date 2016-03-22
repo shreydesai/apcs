@@ -101,6 +101,7 @@ public void insertionSort(int[] list) {
         itemToInsert = list[k];
         j = k - 1;
         stillLooking = true;
+
         while ((j >= 0) && stillLooking) {
             if (itemToInsert < list[j]) {
                 list[j + 1] = list[j];
@@ -110,6 +111,7 @@ public void insertionSort(int[] list) {
                 stillLooking = false;
             }
         }
+        
         list[j + 1] = itemToInsert;
     }
 }
