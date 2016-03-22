@@ -75,4 +75,63 @@ public int findMinimum(int[] list, int first) {
     }
     return minIndex;
 }
+
+public void swap(int[] list, int x, int y) {
+    int temp = list[x];
+    list[x] = list[y];
+    list[y] = temp;
+}
+```
+
+## Insertion Sort
+
+**Overview:**
+* This algorithm passes through the array only once by splitting the array into two-sub arrays, and then working with both of them
+* The first sub-array is always sorted and increases in size as the sort continues; the second sub-array is unsorted and decreases in size as the elements are inserted into the first sub-array
+* Unlike the other algorithms, insertion sort has a `k` value, or "key", which 1) stands for the element that needs to be sorted and 2) indicates the division between the first and second sub-arrays
+* The goal is that on the `kth` pass, the `kth` element will be sorted
+
+**Code:**
+```java
+public void insertionSort(int[] list) {
+    int itemToInsert, j;
+    boolean stillLooking;
+
+    for (int k = 1; k < list.length; k++) {
+        itemToInsert = list[k];
+        j = k - 1;
+        stillLooking = true;
+        while ((j >= 0) && stillLooking) {
+            if (itemToInsert < list[j]) {
+                list[j + 1] = list[j];
+                j--;
+            }
+            else {
+                stillLooking = false;
+            }
+        }
+        list[j + 1] = itemToInsert;
+    }
+}
+```
+
+## Sorting Objects
+
+**Overview:**
+* Java objects will generally implement the `Comparable` interface and implement the method `compareTo`, which allows for the testing of integers or floating-point numbers
+* The goal is to replace all of the array parameters with the respective object and use `compareTo` instead of mere array item comparison with numerical operators
+
+**Sample Code:**
+```java
+public int findMinimum(Object[] list, int first) {
+    int minIndex = first;
+
+    for (int i = first + 1; i < list.length; i++) {
+        if ((Comparable)list[i]).compareTo([list[minIndex]] < 0) {
+            minIndex = i;
+        }
+    }
+
+    return minIndex;
+}
 ```
