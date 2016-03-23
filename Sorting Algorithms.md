@@ -13,7 +13,7 @@
 public void bubbleSort(int[] list) {
     for (int outer = 0; outer < list.length - 1; outer++) {
         for (int inner = 0; i < list.length - outer - 1; inner++) {
-            if (list[inner] < list[inner + 1]) {
+            if (list[inner] < list[inner + 1]) { //this statement determines whether high-to-low
                 int temp = list[inner];
                 list[inner] = list[inner + 1];
                 list[inner + 1] = temp;
@@ -36,7 +36,7 @@ public static void bubbleSort(int[] list) {
         exchangeMade = false;
         k++;
         for (int j = 0; j < list.length - k; j++) {
-            if (list[j] < list[j + 1]) {
+            if (list[j] < list[j + 1]) { //this statement determines whether high-to-low 
                 swap(a, j, j + 1);
                 exchangeMade = true;
             }
@@ -66,10 +66,12 @@ public void selectionSort(int[] list) {
     }
 }
 
+//if you want to do high-to-low, then you do findMaximum
+//if you want to do low-to-high, then you do findMinimum
 public int findMinimum(int[] list, int first) {
     int minIndex = first;
     for (int i = first + 1; i < list.length; i++) {
-        if (list[i] < list[minIndex]) {
+        if (list[i] < list[minIndex]) { //this statement determines whether high-to-low
             minIndex = i;
         }
     }
@@ -103,7 +105,7 @@ public void insertionSort(int[] list) {
         stillLooking = true;
 
         while ((j >= 0) && stillLooking) {
-            if (itemToInsert < list[j]) {
+            if (itemToInsert < list[j]) { //this statement determines whether high-to-low
                 list[j + 1] = list[j];
                 j--;
             }
