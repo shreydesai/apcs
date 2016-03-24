@@ -31,7 +31,7 @@ int [ ] pointValues = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 ```
 	
 	
-**4. Does the order of elements of the ranks, suits, and pointValues arrays matter? **
+**4. Does the order of elements of the ranks, suits, and pointValues arrays matter?**
 Elements of suits may appear in any order. Elements of ranks may be reordered, as ranks are not ordered in Elevens,
 as long as the pointValues elements are reordered in the same way. 
 In card games where rank order is important, the sequence of elements in the ranks variable should be “in order.”
@@ -40,9 +40,7 @@ In card games where rank order is important, the sequence of elements in the ran
 
 ##**Activity 3 Questions:**
 
-**1. Write a static method named flip that simulates a flip of a weighted coin by returning either "heads" or "tails" **
-**each time it is called. The coin is twice as likely to turn up heads as tails. Thus, flip should return "heads" about **
-**twice as often as it returns "tails." **
+**1. Write a static method named flip that simulates a flip of a weighted coin by returning either "heads" or "tails" each time it is called. The coin is twice as likely to turn up heads as tails. Thus, flip should return "heads" about twice as often as it returns "tails."**
 ```java
 public static String flip() {
 	int r = (int) (Math.random() * 3);
