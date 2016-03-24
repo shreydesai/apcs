@@ -98,7 +98,7 @@ public void selectionSort(int[] list) {
                 first = j;
             }
         }
-        
+
         temp = list[first];
         list[first] = list[i];
         list[i] = temp;
@@ -113,6 +113,7 @@ public void selectionSort(int[] list) {
 * The first sub-array is always sorted and increases in size as the sort continues; the second sub-array is unsorted and decreases in size as the elements are inserted into the first sub-array
 * Unlike the other algorithms, insertion sort has a `k` value, or "key", which 1) stands for the element that needs to be sorted and 2) indicates the division between the first and second sub-arrays
 * The goal is that on the `kth` pass, the `kth` element will be sorted
+* Time complexity is O(n^2), or quadratic time; the algorithm is considered inefficient because it uses nested loops
 
 **Code:**
 ```java
@@ -137,6 +138,46 @@ public void insertionSort(int[] list) {
 
         list[j + 1] = itemToInsert;
     }
+}
+```
+
+## Merge Sort
+
+**Overview:**
+* In summary, the purpose of merge sort is to "divide and conquer"
+* The list passed into the merge sort algorithm will be split into equal size lists, which will be sorted, and then **merged back** into the larger list, which will be sorted
+* There are both non-recursive and recursive implementations
+    * The **non-recursive** algorithm usually splits the algorithm into two sections – selection sort and a merge method
+    * The **recursive** algorithm calls itself over and over again until the list is completely sorted
+* Time complexity is O(N * log2N), or linear logarithmic time; the algorithm is considered quite efficient, especially when compared to the quadratic time sorting algorithms
+
+**Code (non-recursive pseudocode):**
+```java
+public void mergeSort(ArrayList<Integer> list, int first, int last) {
+    int mid;
+
+    mid = (first + last) / 2;
+    selectionSort(list, first, mid);
+    selectionSort(list, mid + 1, last);
+    merge(list, first, mid, last);
+}
+```
+
+**Code (recursive pseudocode):***
+```java
+public void mergeSort(int[] list, int first, int last) {
+    int mid;
+
+    if (first == last) {
+        return;
+    } else if (first + 1 == last) {
+        // determine smaller/bigger and swap
+    } else {
+        mid = (first + last) / 2;
+        mergeSort(list, first, mid);
+        mergeSort(list, mid + 1, last);
+        merge(list, first, mid, last);
+     }
 }
 ```
 
