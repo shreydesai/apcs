@@ -17,10 +17,10 @@ Deck d = new Deck(ranks, suits, pointValues);
 The size of the constructed deck is the product of the lengths of ranks & suits, so the answer is 6.
 
 
-**3. The game of Twenty-One is played with a deck of 52 cards. Ranks run from ace (highest) down to 2 (lowest).
-Suits are spades, hearts, diamonds, and clubs as in many other games. 
-A face card has point value 10; an ace has point value 11; point values for 2, …, 10 are 2, …, 10, respectively.
-Specify the contents of the ranks, suits, and pointValues arrays so that the statement**
+**3. The game of Twenty-One is played with a deck of 52 cards. Ranks run from ace (highest) down to 2 (lowest).**
+**Suits are spades, hearts, diamonds, and clubs as in many other games.** 
+**A face card has point value 10; an ace has point value 11; point values for 2, …, 10 are 2, …, 10, respectively.**
+**Specify the contents of the ranks, suits, and pointValues arrays so that the statement**
 ```java
 Deck d = new Deck(ranks, suits, pointValues);
  initializes a deck for a Twenty-One game. 
@@ -39,9 +39,9 @@ In card games where rank order is important, the sequence of elements in the ran
 
 ##**Activity 3 Questions:**
 
-**1. Write a static method named flip that simulates a flip of a weighted coin by returning either "heads" or "tails" 
-each time it is called. The coin is twice as likely to turn up heads as tails. Thus, flip should return "heads" about 
-twice as often as it returns "tails." **
+**1. Write a static method named flip that simulates a flip of a weighted coin by returning either "heads" or "tails" **
+**each time it is called. The coin is twice as likely to turn up heads as tails. Thus, flip should return "heads" about **
+**twice as often as it returns "tails." **
 ```java
 	public static String flip() {
 		int r = (int) (Math.random() * 3);
@@ -53,9 +53,9 @@ twice as often as it returns "tails." **
 	```
 	
 	
-**2. Write a static method named arePermutations that, given two int arrays of the same length but with no duplicate 
-elements, returns true if one array is a permutation of the other (i.e., the arrays differ only in how their contents are arranged).
-Otherwise, it should return false.**
+**2. Write a static method named arePermutations that, given two int arrays of the same length but with no duplicate **
+**elements, returns true if one array is a permutation of the other (i.e., the arrays differ only in how their contents are arranged).**
+**Otherwise, it should return false.**
 Two method solution (using a helper method):
 ```java
 	public static boolean arePermutations (int [ ] a, int [ ] b) {
@@ -98,10 +98,10 @@ One method solution:
 	```
 
 
-** 3. Suppose that the initial contents of the values array in Shuffler.java are {1, 2, 3, 4}. For what sequence of random integers
-would the efficient selection shuffle change values to contain {4, 3, 2, 1}?**
-The sequence 0, 1, 1. The first 0 switches 4 and 1, producing 4, 2, 3, 1; the first 1 switches 2 and 3, producing 4, 3, 2, 1; and
-the second 1 switches the 3 with itself.
+** 3. Suppose that the initial contents of the values array in Shuffler.java are {1, 2, 3, 4}. For what sequence of random integers**
+**would the efficient selection shuffle change values to contain {4, 3, 2, 1}?**
+**The sequence 0, 1, 1. The first 0 switches 4 and 1, producing 4, 2, 3, 1; the first 1 switches 2 and 3, producing 4, 3, 2, 1; and**
+**the second 1 switches the 3 with itself.**
 
 
 ##**Activity 6 Questions:**
@@ -119,15 +119,15 @@ Thus, if the deck is empty and the board contains three cards, they must all be 
 - If none of the three cards is a face card, there must have been a play of an odd number of nonface cards earlier in the game, as there are 40 nonface cards in all. This play would have been illegal.
 
 
-**3. Does the game involve any strategy? That is, when more than one play is possible, does it matter which one is chosen?
-Briefly explain your answer. **
+**3. Does the game involve any strategy? That is, when more than one play is possible, does it matter which one is chosen?**
+**Briefly explain your answer. **
 The game doesn’t involve any strategy. When there is a choice between two or more different plays, it doesn’t matter in which order they are played.
 
 
 ##**Activity 7 Questions:**
 
-**1. What items would be necessary if you were playing a game of Elevens at your desk (not on the computer)? 
-List the private instance variables needed for the ElevensBoard class.**
+**1. What items would be necessary if you were playing a game of Elevens at your desk (not on the computer)? **
+**List the private instance variables needed for the ElevensBoard class.**
 Deck of cards and a list of cards on the board. The ElevensBoard class would need Deck and Card [ ] instance variables.
 
 
@@ -145,20 +145,20 @@ Answers may vary. One possible answer is:
 	If there are no cards left on the board, you win, or else you lose.
 
 
-**3. Now examine the partially implemented ElevensBoard.java file found in the Activity7 Starter Code directory. 
-Does the ElevensBoard class contain all the state and behavior necessary to play the game?**
+**3. Now examine the partially implemented ElevensBoard.java file found in the Activity7 Starter Code directory. **
+**Does the ElevensBoard class contain all the state and behavior necessary to play the game?**
 In the ElevensBoard class, as written, there are no methods that actually select the cards to be removed, only ones to check 
 already selected cards.
 
 
 **4. ElevensBoard.java contains three helper methods. These helper methods are private because they are only called from the ElevensBoard class. **
-*a. Where is the dealMyCards method called in ElevensBoard? *
+*a. Where is the dealMyCards method called in ElevensBoard?*
 The method, dealMyCards, is called in the ElevensBoard constructor and the newGame method.
 
-*b. Which public methods should call the containsPairSum11 and containsJQK methods? *
+*b. Which public methods should call the containsPairSum11 and containsJQK methods?*
 The methods isLegal and anotherPlayIsPossible should call the containsPairSum11 and containsJQK methods.
 
-*c. It’s important to understand how the cardIndexes method works, and how the list that it returns is used. Suppose that cards contains the elements shown below. Trace the execution of the cardIndexes method to determine what list will be returned. Complete the diagram below by filling in the elements of the returned list, and by showing how those values index cards. Note that the returned list may have less than 9 elements. *
+*c. It’s important to understand how the cardIndexes method works, and how the list that it returns is used. Suppose that cards* *contains the elements shown below. Trace the execution of the cardIndexes method to determine what list will be returned. Complete* *the diagram below by filling in the elements of the returned list, and by showing how those values index cards. Note that the* *returned list may have less than 9 elements.*
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 
