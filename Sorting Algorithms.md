@@ -36,7 +36,7 @@ public static void bubbleSort(int[] list) {
         exchangeMade = false;
         k++;
         for (int j = 0; j < list.length - k; j++) {
-            if (list[j] < list[j + 1]) { //this statement determines whether high-to-low 
+            if (list[j] < list[j + 1]) { //this statement determines whether high-to-low
                 swap(a, j, j + 1);
                 exchangeMade = true;
             }
@@ -54,7 +54,7 @@ public static void bubbleSort(int[] list) {
 * There are `n - 1` iterations where `n` is the length of the array
 * Time complexity is O(n^2), or quadratic time; the algorithm is considered inefficient because it uses nested loops.
 
-**Code:**
+**Code (long version):**
 
 ```java
 public void selectionSort(int[] list) {
@@ -82,6 +82,27 @@ public void swap(int[] list, int x, int y) {
     int temp = list[x];
     list[x] = list[y];
     list[y] = temp;
+}
+```
+
+**Code (short version):**
+```java
+public void selectionSort(int[] list) {
+    int i, j, first, temp;
+
+    for (i = list.length - 1; i > 0; i--) {
+        first = 0;
+
+        for (j = 1; j <= i; j++) {
+            if (list[j] < list[first]) {
+                first = j;
+            }
+        }
+        
+        temp = list[first];
+        list[first] = list[i];
+        list[i] = temp;
+    }
 }
 ```
 
@@ -113,7 +134,7 @@ public void insertionSort(int[] list) {
                 stillLooking = false;
             }
         }
-        
+
         list[j + 1] = itemToInsert;
     }
 }
