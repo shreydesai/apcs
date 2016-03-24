@@ -32,6 +32,7 @@ int [ ] pointValues = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 	
 	
 **4. Does the order of elements of the ranks, suits, and pointValues arrays matter?**
+
 Elements of suits may appear in any order. Elements of ranks may be reordered, as ranks are not ordered in Elevens,
 as long as the pointValues elements are reordered in the same way. 
 In card games where rank order is important, the sequence of elements in the ranks variable should be “in order.”
@@ -55,7 +56,10 @@ public static String flip() {
 **2. Write a static method named arePermutations that, given two int arrays of the same length but with no duplicate **
 **elements, returns true if one array is a permutation of the other (i.e., the arrays differ only in how their contents are arranged).**
 **Otherwise, it should return false.**
-Two method solution (using a helper method):
+
+Two method solution 
+
+(using a helper method):
 ```java
 	public static boolean arePermutations (int [ ] a, int [ ] b) {
 		for (int aValue : a) {
@@ -79,22 +83,22 @@ Two method solution (using a helper method):
 	
 One method solution:
 ```
-	public static boolean arePermutations ( int [ ] a, int [ ] b ) {
-		for ( int aValue : a) {
-			// Make sure that every element of a is somewhere in b.
-			boolean found = false;
-			for ( int bValue : b) {
-				if ( bValue == aValue ) {
-					found = true;
-				}
-			}
-			if ( ! found ) {
-				return false;
-			}
+public static boolean arePermutations ( int [ ] a, int [ ] b ) {
+	for ( int aValue : a) {
+	// Make sure that every element of a is somewhere in b.
+	boolean found = false;
+	for ( int bValue : b) {
+		if ( bValue == aValue ) {
+			found = true;
 		}
-		return true;
 	}
-	```
+	if ( ! found ) {
+		return false;
+	}
+	}
+	return true;
+}
+```
 
 
 ** 3. Suppose that the initial contents of the values array in Shuffler.java are {1, 2, 3, 4}. For what sequence of random integers**
