@@ -17,6 +17,7 @@ Deck d = new Deck(ranks, suits, pointValues);
 The size of the constructed deck is the product of the lengths of ranks & suits, so the answer is 6.
 
 
+
 **3. The game of Twenty-One is played with a deck of 52 cards. Ranks run from ace (highest) down to 2 (lowest).**
 **Suits are spades, hearts, diamonds, and clubs as in many other games.** 
 **A face card has point value 10; an ace has point value 11; point values for 2, …, 10 are 2, …, 10, respectively.**
@@ -24,10 +25,10 @@ The size of the constructed deck is the product of the lengths of ranks & suits,
 ```java
 Deck d = new Deck(ranks, suits, pointValues);
  initializes a deck for a Twenty-One game. 
-	String [ ] ranks = {“2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “10”, “jack”, “queen”, “king”, “ace”};
-	String [ ] suits = {“spades”, “hearts”, “diamonds”, “clubs”};
-	int [ ] pointValues = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
-	```
+String [ ] ranks = {“2”, “3”, “4”, “5”, “6”, “7”, “8”, “9”, “10”, “jack”, “queen”, “king”, “ace”};
+String [ ] suits = {“spades”, “hearts”, “diamonds”, “clubs”};
+int [ ] pointValues = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
+```
 	
 	
 **4. Does the order of elements of the ranks, suits, and pointValues arrays matter? **
@@ -43,14 +44,14 @@ In card games where rank order is important, the sequence of elements in the ran
 **each time it is called. The coin is twice as likely to turn up heads as tails. Thus, flip should return "heads" about **
 **twice as often as it returns "tails." **
 ```java
-	public static String flip() {
-		int r = (int) (Math.random() * 3);
-		if (r < 2) {
-			return “heads”; }
-		else {
-			return “tails”; }
-	}
-	```
+public static String flip() {
+	int r = (int) (Math.random() * 3);
+	if (r < 2) {
+		return “heads”; }
+	else {
+		return “tails”; }
+}
+```
 	
 	
 **2. Write a static method named arePermutations that, given two int arrays of the same length but with no duplicate **
