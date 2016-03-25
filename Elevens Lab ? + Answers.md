@@ -1,27 +1,33 @@
 # Elevens Lab Questions and Answers
 
-##**Activity 2 Questions:**
+## Activity 2 Questions:
 
-**1. Explain in your own words the relationship between a deck and a card.**
+1. Explain in your own words the relationship between a deck and a card.
    
-    A deck is a collection of cards.
+```
+A deck is a collection of cards.
+```
     
-    
-**2. Consider the deck initialized with the statements below. How many cards does the deck contain?**
+2. Consider the deck initialized with the statements below. How many cards does the deck contain?
+
 ```java
 String[] ranks = {"jack", "queen", "king"}; 
 String[] suits = {"blue", "red"}; 
 int[] pointValues = {11, 12, 13}; 
 Deck d = new Deck(ranks, suits, pointValues); 
 ```
+
+```
 The size of the constructed deck is the product of the lengths of ranks & suits, so the answer is 6.
+```
 
+3. The game of Twenty-One is played with a deck of 52 cards. Ranks run from ace (highest) down to 2 (lowest).
 
+```
+Suits are spades, hearts, diamonds, and clubs as in many other games.
+A face card has point value 10; an ace has point value 11; point values for 2, …, 10 are 2, …, 10, respectively.
+```
 
-**3. The game of Twenty-One is played with a deck of 52 cards. Ranks run from ace (highest) down to 2 (lowest).**
-**Suits are spades, hearts, diamonds, and clubs as in many other games.** 
-**A face card has point value 10; an ace has point value 11; point values for 2, …, 10 are 2, …, 10, respectively.**
-**Specify the contents of the ranks, suits, and pointValues arrays so that the statement**
 ```java
 Deck d = new Deck(ranks, suits, pointValues);
  initializes a deck for a Twenty-One game. 
@@ -30,18 +36,16 @@ String [ ] suits = {“spades”, “hearts”, “diamonds”, “clubs”};
 int [ ] pointValues = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 ```
 	
-	
-**4. Does the order of elements of the ranks, suits, and pointValues arrays matter?**
+4. Does the order of elements of the ranks, suits, and pointValues arrays matter?
 
-Elements of suits may appear in any order. Elements of ranks may be reordered, as ranks are not ordered in Elevens,
-as long as the pointValues elements are reordered in the same way. 
-In card games where rank order is important, the sequence of elements in the ranks variable should be “in order.”
+```
+Elements of suits may appear in any order. Elements of ranks may be reordered, as ranks are not ordered in Elevens, as long as the pointValues elements are reordered in the same way. In card games where rank order is important, the sequence of elements in the ranks variable should be “in order.”
+```
 
+## Activity 3 Questions:
 
+1. Write a static method named flip that simulates a flip of a weighted coin by returning either "heads" or "tails" each time it is called. The coin is twice as likely to turn up heads as tails. Thus, flip should return "heads" about twice as often as it returns "tails."
 
-##**Activity 3 Questions:**
-
-**1. Write a static method named flip that simulates a flip of a weighted coin by returning either "heads" or "tails" each time it is called. The coin is twice as likely to turn up heads as tails. Thus, flip should return "heads" about twice as often as it returns "tails."**
 ```java
 public static String flip() {
 	int r = (int) (Math.random() * 3);
@@ -53,9 +57,7 @@ public static String flip() {
 ```
 	
 	
-**2. Write a static method named arePermutations that, given two int arrays of the same length but with no duplicate **
-**elements, returns true if one array is a permutation of the other (i.e., the arrays differ only in how their contents are arranged).**
-**Otherwise, it should return false.**
+2. Write a static method named arePermutations that, given two int arrays of the same length but with no duplicate elements, returns true if one array is a permutation of the other (i.e., the arrays differ only in how their contents are arranged).Otherwise, it should return false.
 
 Two method solution 
 
@@ -79,7 +81,7 @@ Two method solution
 		}
 	return false;
 	}
-	```
+```
 	
 One method solution:
 ```
@@ -101,17 +103,23 @@ public static boolean arePermutations ( int [ ] a, int [ ] b ) {
 ```
 
 
-** 3. Suppose that the initial contents of the values array in Shuffler.java are {1, 2, 3, 4}. For what sequence of random integers**
-**would the efficient selection shuffle change values to contain {4, 3, 2, 1}?**
-**The sequence 0, 1, 1. The first 0 switches 4 and 1, producing 4, 2, 3, 1; the first 1 switches 2 and 3, producing 4, 3, 2, 1; and**
-**the second 1 switches the 3 with itself.**
+3. Suppose that the initial contents of the values array in Shuffler.java are {1, 2, 3, 4}. For what sequence of random integers would the efficient selection shuffle change values to contain {4, 3, 2, 1}? 
 
+```
+The sequence 0, 1, 1. The first 0 switches 4 and 1, producing 4, 2, 3, 1; the first 1 switches 2 and 3, producing 4, 3, 2, 1; and the second 1 switches the 3 with itself.
+```
 
-##**Activity 6 Questions:**
-**1. List all possible plays for the board 5♠ 4♥ 2♦ 6♣ A♠ J♥ K♦ 5♣ 2♠ **
+## Activity 6 Questions:
+
+1. List all possible plays for the board 5♠ 4♥ 2♦ 6♣ A♠ J♥ K♦ 5♣ 2♠
+
+```
 The 5♠ with the 6♣ make 11. The 5♣ with the 6♣ also make 11.
+```
 
-**2. If the deck is empty and the board has three cards left, must they be J, Q, and K? Why or why not? **
+2. If the deck is empty and the board has three cards left, must they be J, Q, and K? Why or why not?
+
+```
 The deck and the board satisfy three invariant relations before and after each play.
 - The number of face cards in the deck plus the number of face cards in the board is divisble by 3.
 - The number of jacks, the number of queens, and the number of kings are all equal to each other.
@@ -120,21 +128,26 @@ Thus, if the deck is empty and the board contains three cards, they must all be 
 - If there are three face cards left, there must have been three previous plays of face cards. If the remaining cards are not JQK, then each face card rank wasn’t played the same number of times. This can’t happen.
 - If there are two or one face cards left, we get a contradiction using the same reasoning as in the first case.
 - If none of the three cards is a face card, there must have been a play of an odd number of nonface cards earlier in the game, as there are 40 nonface cards in all. This play would have been illegal.
+```
 
 
-**3. Does the game involve any strategy? That is, when more than one play is possible, does it matter which one is chosen?**
-**Briefly explain your answer. **
+3. Does the game involve any strategy? That is, when more than one play is possible, does it matter which one is chosen? Briefly explain your answer.
+
+```
 The game doesn’t involve any strategy. When there is a choice between two or more different plays, it doesn’t matter in which order they are played.
+```
 
 
-##**Activity 7 Questions:**
+## Activity 7 Questions:
 
-**1. What items would be necessary if you were playing a game of Elevens at your desk (not on the computer)? **
-**List the private instance variables needed for the ElevensBoard class.**
-Deck of cards and a list of cards on the board. The ElevensBoard class would need Deck and Card [ ] instance variables.
+1. What items would be necessary if you were playing a game of Elevens at your desk (not on the computer)? List the private instance variables needed for the ElevensBoard class.
+
+```
+Deck of cards and a list of cards on the board. The ElevensBoard class would need Deck and Card [] instance variables.
+```
 
 
-** 2. Write an algorithm that describes the actions necessary to play the Elevens game. **
+2. Write an algorithm that describes the actions necessary to play the Elevens game.
 Answers may vary. One possible answer is:
 	Shuffle the deck;
 	Deal nine cards;
