@@ -146,39 +146,46 @@ The game doesn’t involve any strategy. When there is a choice between two or m
 Deck of cards and a list of cards on the board. The ElevensBoard class would need Deck and Card [] instance variables.
 ```
 
-
 2. Write an algorithm that describes the actions necessary to play the Elevens game.
 Answers may vary. One possible answer is:
-	Shuffle the deck;
-	Deal nine cards;
-	While there is a possible move, 
-		If a pair exists that sums to 11,
-			Remove the pair;
-			Replace the two removed cards if possible;
-		Else if a triplet that contains J, Q, K exists,
-			Remove the triplet;
-			Replace the three removed cards if possible;
-	If there are no cards left on the board, you win, or else you lose.
+```
+Shuffle the deck;
+Deal nine cards;
+While there is a possible move, 
+	If a pair exists that sums to 11,
+		Remove the pair;
+		Replace the two removed cards if possible;
+	Else if a triplet that contains J, Q, K exists,
+		Remove the triplet;
+		Replace the three removed cards if possible;
+If there are no cards left on the board, you win, or else you lose.
+```
 
+3. Now examine the partially implemented ElevensBoard.java file found in the Activity7 Starter Code directory.
+Does the ElevensBoard class contain all the state and behavior necessary to play the game?
 
-**3. Now examine the partially implemented ElevensBoard.java file found in the Activity7 Starter Code directory. **
-**Does the ElevensBoard class contain all the state and behavior necessary to play the game?**
+```
 In the ElevensBoard class, as written, there are no methods that actually select the cards to be removed, only ones to check 
 already selected cards.
+```
 
+4. ElevensBoard.java contains three helper methods. These helper methods are private because they are only called from the ElevensBoard class.
+a. Where is the dealMyCards method called in ElevensBoard?
 
-**4. ElevensBoard.java contains three helper methods. These helper methods are private because they are only called from the ElevensBoard class. **
-*a. Where is the dealMyCards method called in ElevensBoard?*
+```
 The method, dealMyCards, is called in the ElevensBoard constructor and the newGame method.
+```
 
-*b. Which public methods should call the containsPairSum11 and containsJQK methods?*
+b. Which public methods should call the containsPairSum11 and containsJQK methods?
+
+```
 The methods isLegal and anotherPlayIsPossible should call the containsPairSum11 and containsJQK methods.
+```
 
-*c. It’s important to understand how the cardIndexes method works, and how the list that it returns is used. Suppose that cards* *contains the elements shown below. Trace the execution of the cardIndexes method to determine what list will be returned. Complete* *the diagram below by filling in the elements of the returned list, and by showing how those values index cards. Note that the* *returned list may have less than 9 elements.*
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+c. It’s important to understand how the cardIndexes method works, and how the list that it returns is used. Suppose that cards contains the elements shown below. Trace the execution of the cardIndexes method to determine what list will be returned. Complete the diagram below by filling in the elements of the returned list, and by showing how those values index cards. Note that the returned list may have less than 9 elements.
 
+d. Complete the following printCards method to print all of the elements of cards that are indexed by cIndexes.
 
-*d. Complete the following printCards method to print all of the elements of cards that are indexed by cIndexes.*
 ```java
 public static printCards(ElevensBoard board) {
       List cIndexes = board.cardIndexes(); 
@@ -195,30 +202,41 @@ public static printCards ( ElevensBoard board ) {
 }
 ```
 
-*e. Which one of the methods that you identified in question 4b above needs to call the cardIndexes method before calling the containsPairSum11 and containsJQK methods? Why?*
+e. Which one of the methods that you identified in question 4b above needs to call the cardIndexes method before calling the containsPairSum11 and containsJQK methods? Why?
+
+```
 The method anotherPlayIsPossible needs to call the cardIndexes method before calling the containsPairSum11 and containsJQK methods. It needs to do this in order to get the indexes of all the cards on the board ( non-null cards) so that it can check to see if the board contains another pair of cards that sum to 11 or a JQK-triplet.
+```
 
+## Activity 8 Questions:
 
-##**Activity 8 Questions:**
+1. Discuss the similarities and differences between Elevens, Thirteens, and Tens.
 
-**1. Discuss the similarities and differences between Elevens, Thirteens, and Tens.**
-_Similarities:_
+Similarities:
+
+```
 They are all single player games.
 They are all played on a board with cards.
 The cards are selected for removal based on one of two rules: the cards’ point values add up to a specific sum, or there is a specific group of face cards.
+```
 
-_Differences:_
+Differences:
+
+```
 The number of cards on the board is different.
 The sums differ.
 The specific groups of face cards differ.
+```
 
-
-** 2. As discussed previously, all of the instance variables are declared in the Board class. But it is the ElevensBoard class that “knows” the board size, and the ranks, suits, and point values of the cards in the deck. How do the Board instance variables get initialized with the ElevensBoard values? What is the exact mechanism? **
+2. As discussed previously, all of the instance variables are declared in the Board class. But it is the ElevensBoard class that “knows” the board size, and the ranks, suits, and point values of the cards in the deck. How do the Board instance variables get initialized with the ElevensBoard values? What is the exact mechanism?
 The ElevensBoard constructor passes to the Board constructor the information needed to initialize the instance variables declared in the abstract Board class. This is accomplished through the following use of super:
+
 ```java
-	super ( BOARD_SIZE, RANKS, SUITS, POINT_VALUES ) ;
-	```
+super ( BOARD_SIZE, RANKS, SUITS, POINT_VALUES );
+```
 	
-	
-**3. Now examine the files Board.java, and ElevensBoard.java, found in the Activity8 Starter Code directory. Identify the abstract methods in Board.java. See how these methods are implemented in ElevensBoard. Do they cover all the differences between Elevens, Thirteens, and Tens as discussed in question 1? Why or why not?**
+3. Now examine the files Board.java, and ElevensBoard.java, found in the Activity8 Starter Code directory. Identify the abstract methods in Board.java. See how these methods are implemented in ElevensBoard. Do they cover all the differences between Elevens, Thirteens, and Tens as discussed in question 1? Why or why not?
+
+```
 No. The abstract methods will have to be implemented differently in the Tens and Thirteens games and will need different private helper methods to accomplish their tasks.
+```
