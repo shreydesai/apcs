@@ -12,6 +12,7 @@ Additional resources for AP Computer Science:
 ### Introduction
 * [Base Conversion](https://github.com/shreydesai/apcs/blob/master/Base%20Conversion.md)
 * [Primitive Data Types](https://github.com/shreydesai/apcs/blob/master/Primitive%20Data%20Types.md)
+* [Variable Declaration](https://github.com/shreydesai/apcs/blob/master/Variable%20Declaration.md)
 * [Operators and Precedence](https://github.com/shreydesai/apcs/blob/master/Operators%20and%20Precedence.md)
 
 ### Classes
