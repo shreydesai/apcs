@@ -11,6 +11,7 @@ Additional resources for AP Computer Science:
 
 ### Introduction
 * [Base Conversion](https://github.com/shreydesai/apcs/blob/master/Base%20Conversion.md)
+* [Operators and Precedence](https://github.com/shreydesai/apcs/blob/master/Operators%20and%20Precedence.md)
 
 ### Classes
 * [Static Variables and Methods](https://github.com/shreydesai/apcs/blob/master/Static%20Variables%20and%20Methods.md)
