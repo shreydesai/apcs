@@ -6,6 +6,7 @@ Problem: Convert `101011101` to a decimal number (`base 10`).
 
 **Step 1:** Align the digits of a binary number with the powers of `2`.
 
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 |
 | 2^8 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
 
