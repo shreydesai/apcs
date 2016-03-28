@@ -6,17 +6,20 @@ Problem: Convert `101011101` to a decimal number (`base 10`).
 
 **Step 1:** Align the digits of a binary number with the powers of `2`.
 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 0 | 1 | 0 | 1 | 1 | 1 | 0 | 1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2^8 | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
 
 **Step 2:** Calculate the powers of `2` on the bottom table.
 
 | 1 | 0 | 1 | 0 | 1| 1 | 1 | 0 | 1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
 **Step 3:** If there is a `1` in the table, highlight the corresponding power of `2`. If there is a `0` in the table, ignore the corresponding power of `2`.
 
+| 1 | 0 | 1 | 0 | 1| 1 | 1 | 0 | 1 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **1** | 0 | **1** | 0 | **1** | **1** | **1** | 0 | **1** |
 | **256** | 128 | **64** | 32 | **16** | **8** | **4** | 2 | **1** |
 
@@ -31,6 +34,7 @@ Problem: Convert `101011101` to a decimal number (`base 10`).
 Reference: Before doing any hexadecimal to decimal conversions, make sure you know what different letters stand for. Here is a table for hexadecimal reference:
 
 | 10 | 11 | 12 | 13 | 14 | 15 |
+| --- | --- | --- | --- | --- | --- |
 | A | B | C | D | E | F |
 
 Problem: Convert `7DE` to a decimal number (`base 10`).
@@ -38,11 +42,13 @@ Problem: Convert `7DE` to a decimal number (`base 10`).
 **Step 1:** Align the digits of a binary number with the powers of `16`.
 
 | 7 | D | E |
+| --- | --- | --- |
 | 16^2 | 16^1 | 16^0 |
 
 **Step 2:** Calculate the powers of `16` on the bottom table and change the alphabet letters in the top table to numerical values by referencing the hexadecimal table above.
 
 | 7 | 13 | 14 |
+| --- | --- | --- |
 | 256 | 16 | 1 |
 
 **Step 3:** Multiply the number on the top table with the number on the bottom table and add the values to find the decimal number.
