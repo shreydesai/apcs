@@ -1,12 +1,16 @@
 # Variable Casting
 
-Variable casting is used when the data type of a variable is temporarily converted to another primitive data type. The general formula for variable casting is: `<variable type A> <variable name> = (<variable type A>) <data>`.
+## Overview
 
-Common variable casting conversions include:
-* `int` to `double` and `double` to `int`
-* `int` to `char` and `char` to `int`
+* Variable casting is used when the data type of a variable is temporarily converted to another primitive data type. The general formula for variable casting is: `<variable type A> <variable name> = (<variable type A>) <data>`.
+* Common variable casting conversions include:
+	* `int` to `double` and `double` to `int`
+	* `int` to `char` and `char` to `int`
+* Some primitive data types cannot be casted to another, such as `boolean` to `int`, or `short` to `long` - doing so will throw an exception
 
-**`int` and `double` Example:**
+## Examples
+
+**`int` and `double`**
 
 ```java
 int x1 = 5;
@@ -17,7 +21,7 @@ double x2 = (double) x1;
 System.out.println(x2);		// Prints 5.0
 ```
 
-**`int` and `char` Example:**
+**`int` and `char`**
 
 ```java
 char x1 = 'a';
@@ -27,6 +31,8 @@ int x2 = (int) x1;
 
 System.out.println(x2);		// Prints 97
 ```
+
+## Miscellaneous
 
 More on `int` to `char` casting:
 * `char` data types are actually stored as integers in memory
