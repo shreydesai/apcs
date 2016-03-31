@@ -2,8 +2,8 @@
 
 ## Overview
 
-* Object-oriented programming (OOP) is a standard by which programming languages can model  objects in the real world
-* **Classes** represent objects and **methods** can be used to do something to the object or have it do something to another object
+* Object-oriented programming (OOP) is a standard by which programming languages can model  objects in the world
+* **Classes** represent objects and **methods** can be used to do something to the object
 * Objects also have attributes, which can be represented by individual variables
 
 ## Attributes
@@ -77,7 +77,7 @@ public class Square {
 
 ## Case Study: Pencil
 
-A pencil is an example of an object in the real world. Naming a class can follow this general formula: `public class <class name>`.
+A pencil is an example of an object in the real world. Naming a class can follow this general formula: `public class <class name>`. Note: there are no other modifiers that go in the class declaration.
 
 ```java
 public class Pencil {
@@ -96,7 +96,7 @@ public class Pencil {
 }
 ```
 
-A constructor can also be used to instantiate these variables
+A constructor can also be used to instantiate these variables.
 
 ```java
 public class Pencil {
@@ -113,7 +113,7 @@ public class Pencil {
 }
 ```
 
-We can also add methods in order to access the private data members or attributes if we want to use the `Pencil` object in another class.
+We can also add methods in order to access the private data members or attributes if we want to use the `Pencil` object in another class. Note that all of the methods are uniform and specific in their name.
 
 ```java
 public class Pencil {
