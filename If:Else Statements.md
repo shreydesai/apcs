@@ -19,7 +19,7 @@ if {
 }
 ```
 
-As stated above, you can also add `else if` statements if you would like to have more than two options to handle in a conditional flow. 
+As stated above, you can also add `else if` statements if you would like to have more than two options.
 
 ```java
 if (boolean condition) {
@@ -31,13 +31,14 @@ if (boolean condition) {
 }
 ```
 
-Miscellaneous notes:
+## Miscellaneous
+
 * You can have more than one `else if` statements, but you can only have one `if` and one `else` statement in a single conditional expression
 * The `else` statement is optional in a conditional expression
 * The `else` statement does not require a boolean expression
 * You can also have further `if` and `else` statements within an `if` or `else` statement for greater conditional control 
 
-## Example
+## Examples
 
 ### One `if`/`else if`/`else` statement
 ```java
