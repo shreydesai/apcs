@@ -16,6 +16,9 @@ Additional resources for AP Computer Science:
 * [Operators and Precedence](https://github.com/shreydesai/apcs/blob/master/Operators%20and%20Precedence.md)
 * [Variable Casting](https://github.com/shreydesai/apcs/blob/master/Variable%20Casting.md)
 
+### Control Structures
+* [If/Else Statements](https://github.com/shreydesai/apcs/blob/master/If:Else%20Statements.md)
+
 ### Classes
 * [Object-Oriented Programming](https://github.com/shreydesai/apcs/blob/master/Object-Oriented%20Programming.md)
 * [Static Variables and Methods](https://github.com/shreydesai/apcs/blob/master/Static%20Variables%20and%20Methods.md)
