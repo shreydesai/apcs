@@ -12,7 +12,7 @@
 The basic structure of an `if`/`else` statement is as follows:
 
 ```java
-if {
+if (<boolean condition>) {
 	// Code that goes in the if statement
 } else {
 	// Code that goes in the else statement
@@ -22,9 +22,9 @@ if {
 As stated above, you can also add `else if` statements if you would like to have more than two options.
 
 ```java
-if (boolean condition) {
+if (<boolean condition>) {
 	// Code that goes in the if statement
-} else if (boolean condition) {
+} else if (<boolean condition>) {
 	// Code that goes in the else if statement
 } else {
 	// Code that goes in the else statement
