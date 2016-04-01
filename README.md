@@ -17,11 +17,22 @@ Additional resources for AP Computer Science:
 * [Variable Casting](https://github.com/shreydesai/apcs/blob/master/Variable%20Casting.md)
 
 ### Control Structures
-* [If/Else Statements](https://github.com/shreydesai/apcs/blob/master/If:Else%20Statements.md)
+* [If Statements](https://github.com/shreydesai/apcs/blob/master/If%20Statements.md)
+* [Switch Statements](https://github.com/shreydesai/apcs/blob/master/Switch%20Statements.md)
+
+### Logic
+* [Boolean Operators](https://github.com/shreydesai/apcs/blob/master/Boolean%20Operators.md)
+
+### Branching Statements
+* [Break](https://github.com/shreydesai/apcs/blob/master/Break.md)
+* [Continue](https://github.com/shreydesai/apcs/blob/master/Continue.md)
 
 ### Classes
 * [Object-Oriented Programming](https://github.com/shreydesai/apcs/blob/master/Object-Oriented%20Programming.md)
 * [Static Variables and Methods](https://github.com/shreydesai/apcs/blob/master/Static%20Variables%20and%20Methods.md)
+
+### Libraries
+* [Importing](https://github.com/shreydesai/apcs/blob/master/Importing.md)
 
 ### Interfaces
 * [List Interface](https://github.com/shreydesai/apcs/blob/master/List%20Interface.md)
