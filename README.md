@@ -20,6 +20,9 @@ Additional resources for AP Computer Science:
 * [If Statements](https://github.com/shreydesai/apcs/blob/master/If%20Statements.md)
 * [Switch Statements](https://github.com/shreydesai/apcs/blob/master/Switch%20Statements.md)
 
+### Iteration
+* [For Loops](https://github.com/shreydesai/apcs/blob/master/For%Loops.md)
+
 ### Logic
 * [Boolean Operators](https://github.com/shreydesai/apcs/blob/master/Boolean%20Operators.md)
 
