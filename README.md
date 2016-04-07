@@ -21,7 +21,7 @@ Additional resources for AP Computer Science:
 * [Switch Statements](https://github.com/shreydesai/apcs/blob/master/Switch%20Statements.md)
 
 ### Iteration
-* [For Loops](https://github.com/shreydesai/apcs/blob/master/For%Loops.md)
+* [For Loops](https://github.com/shreydesai/apcs/blob/master/For%20Loops.md)
 
 ### Logic
 * [Boolean Operators](https://github.com/shreydesai/apcs/blob/master/Boolean%20Operators.md)
