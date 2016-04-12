@@ -1,7 +1,7 @@
-**#Methods#**
+#**Methods**#
 - must have return statements, unless it is a **void** method
 - method format is:
-  <visibility modifier> <return type> <method name> <parameter list>
+-   <visibility modifier> <return type> <method name> <parameter list>
 
 #Example#
 
