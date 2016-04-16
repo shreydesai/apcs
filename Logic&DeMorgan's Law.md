@@ -1,17 +1,18 @@
 #**Logic**
 + Logical operators are used in Boolean expressions that control the behavior of "if", "while", and "for" statements
 
+
 + && (and) => both statements must be true to make the whole condition true
 + || (or) => both statements must be false to make the whole condition false, or at least one statement must be true to make the whole condition true
 + ! (not) => switches true statements to false, and vice versa
 
 ####Relational Operators
-+ > greater than
-+ >= greater than or equal to
-+ < less than
-+ <= less than or equal to
-+ == equal to
-+ != not equal to
++ >     greater than
++ >=    greater than or equal to
++ <     less than
++ <=    less than or equal to
++ ==    equal to
++ !=    not equal to
 
 ##Example
 ```javascript
@@ -31,18 +32,18 @@ else{
 ```
 
 # **DeMorgan's Laws (Boolean Logic)**
-- ! (!A && B)  => (A || !B)
-- ! (C || !D)  => (!C && D)
-- ! (x > 5)  => (x <= 5)
+- !  (  !A  &&  B  )  =>  (  A  ||  !B  )
+- !  (  C  ||  !D  )  =>  (  !C  &&  D  )
+- !  ( x  >  5  )  =>  (  x  <=  5  )
 + basically opposites
 + can go backwaards and forwards
 
 ## Example Question
 - The expression !((m < n) || (m != 5)) is equivalent to which of the following?
-*a. (m < n) && (m != 5)
-*b. ! (m < n) || ! (m != 5)
-*c. (m > n) && (m == 5)
-*d. (m >= n) && (m == 5)
-*e. (m <= n) || ! (m == 5)
++a. (m < n) && (m != 5)
++b. ! (m < n) || ! (m != 5)
++c. (m > n) && (m == 5)
++d. (m >= n) && (m == 5)
++e. (m <= n) || ! (m == 5)
 
 
