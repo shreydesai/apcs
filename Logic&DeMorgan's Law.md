@@ -31,18 +31,18 @@ else{
 ```
 
 # **DeMorgan's Laws (Boolean Logic)**
-! (!A && B)  => (A || !B)
-! (C || !D)  => (!C && D)
-! (x > 5)  => (x <= 5)
+- ! (!A && B)  => (A || !B)
+- ! (C || !D)  => (!C && D)
+- ! (x > 5)  => (x <= 5)
 + basically opposites
 + can go backwaards and forwards
 
 ## Example Question
-The expression !((m < n) || (m != 5)) is equivalent to which of the following?
-a. (m < n) && (m != 5)
-b. ! (m < n) || ! (m != 5)
-c. (m > n) && (m == 5)
-d. (m >= n) && (m == 5)
-e. (m <= n) || ! (m == 5)
+- The expression !((m < n) || (m != 5)) is equivalent to which of the following?
+*a. (m < n) && (m != 5)
+*b. ! (m < n) || ! (m != 5)
+*c. (m > n) && (m == 5)
+*d. (m >= n) && (m == 5)
+*e. (m <= n) || ! (m == 5)
 
 
