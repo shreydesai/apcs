@@ -40,10 +40,10 @@ else{
 
 ## Example Question
 - The expression !((m < n) || (m != 5)) is equivalent to which of the following?
-+a. (m < n) && (m != 5)
-+b. ! (m < n) || ! (m != 5)
-+c. (m > n) && (m == 5)
-+d. (m >= n) && (m == 5)
-+e. (m <= n) || ! (m == 5)
+    +a. (m < n) && (m != 5)
+    +b. ! (m < n) || ! (m != 5)
+    +c. (m > n) && (m == 5)
+    +d. (m >= n) && (m == 5)
+    +e. (m <= n) || ! (m == 5)
 
 
