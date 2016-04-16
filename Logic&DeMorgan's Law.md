@@ -39,7 +39,7 @@ else{
 + can go backwaards and forwards
 
 ## Example Question
-- The expression !((m < n) || (m != 5)) is equivalent to which of the following?
++ The expression !((m < n) || (m != 5)) is equivalent to which of the following?
     +a. (m < n) && (m != 5)
     +b. ! (m < n) || ! (m != 5)
     +c. (m > n) && (m == 5)
