@@ -12,3 +12,37 @@
 + <= less than or equal to
 + == equal to
 + != not equal to
+
+##Example
+```javascript
+int a = 28; int b = 47; int c = 84;
+if ((a<30) && (c>=85)){
+    System.out.println("Hello");
+}
+else{
+    if ((b>50) || (a>25)){
+        System.out.println("Goodbye");
+    }
+    else {
+        System.out.println("I can't make up my mind!");
+    }
+    System.out.println("Here is a cool quilt with emoticons!");
+}
+```
+
+# **DeMorgan's Laws (Boolean Logic)**
+! (!A && B)  => (A || !B)
+! (C || !D)  => (!C && D)
+! (x > 5)  => (x <= 5)
++ basically opposites
++ can go backwaards and forwards
+
+## Example Question
+The expression !((m < n) || (m != 5)) is equivalent to which of the following?
+a. (m < n) && (m != 5)
+b. ! (m < n) || ! (m != 5)
+c. (m > n) && (m == 5)
+d. (m >= n) && (m == 5)
+e. (m <= n) || ! (m == 5)
+
+
