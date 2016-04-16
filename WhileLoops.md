@@ -14,6 +14,7 @@ while (num <= 32) {
 
 # **Do While Loops**
 + similar to a while loop except that the code will run the do-while loop at least once
+    - after the code has gone through the loop the first time, the condition must be satisfied to go through the do-while loop again
 + this is a post-test loop
 
 ## Example
