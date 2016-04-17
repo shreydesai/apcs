@@ -14,6 +14,9 @@
 ## Example Code
 ``` javascript
 ArrayList <String> colorList = new ArrayList <String> ();
+colorList.add("green");
+colorList.add("white");
+colorList.add("yellow");
 
 //returns the size or length of the ArrayList colorList
 colorList.size();
