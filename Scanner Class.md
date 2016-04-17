@@ -12,3 +12,4 @@ System.out.print("Eter an integer: ");
 num 1 = keyboard.nextInt();
 System.out.print("Enter a double value: ");
 dnum1 = keyboard.nextDouble();
+```
