@@ -15,16 +15,21 @@ Additional resources for AP Computer Science:
 * [Variable Declaration](https://github.com/shreydesai/apcs/blob/master/Variable%20Declaration.md)
 * [Operators and Precedence](https://github.com/shreydesai/apcs/blob/master/Operators%20and%20Precedence.md)
 * [Variable Casting](https://github.com/shreydesai/apcs/blob/master/Variable%20Casting.md)
+* [Variable Scope](https://github.com/shreydesai/apcs/blob/master/Variable%Scope.md)
 
 ### Control Structures
 * [If Statements](https://github.com/shreydesai/apcs/blob/master/If%20Statements.md)
 * [Switch Statements](https://github.com/shreydesai/apcs/blob/master/Switch%20Statements.md)
+* [Handling Exceptions](https://github.com/shreydesai/apcs/blob/master/Handling%20Exceptions.md)
 
 ### Iteration
 * [For Loops](https://github.com/shreydesai/apcs/blob/master/For%20Loops.md)
+* [While/Do-While Loops](https://github.com/shreydesai/apcs/blob/master/While%20Loops.md)
+* [Recursion](https://github.com/shreydesai/apcs/blob/master/Recursion.md)
 
 ### Logic
 * [Boolean Operators](https://github.com/shreydesai/apcs/blob/master/Boolean%20Operators.md)
+* [DeMorgan's Law](https://github.com/shreydesai/apcs/blob/master/DeMorgan%Law.md)
 
 ### Branching Statements
 * [Break](https://github.com/shreydesai/apcs/blob/master/Break.md)
@@ -37,9 +42,12 @@ Additional resources for AP Computer Science:
 * [Object-Oriented Programming](https://github.com/shreydesai/apcs/blob/master/Object-Oriented%20Programming.md)
 * [Static Variables and Methods](https://github.com/shreydesai/apcs/blob/master/Static%20Variables%20and%20Methods.md)
 * [Memory Allocation](https://github.com/shreydesai/apcs/blob/master/Memory%20Allocation.md)
+* [Class Casting](https://github.com/shreydesai/apcs/blob/master/Class%20Casting.md)
+* [Wrapper Classes](https://github.com/shreydesai/apcs/blob/master/Wrapper%20Classes.md)
 
 ### Libraries
 * [Importing](https://github.com/shreydesai/apcs/blob/master/Importing.md)
+* [File IO](https://github.com/shreydesai/apcs/blob/master/File%20IO.md)
 
 ### Interfaces
 * [List Interface](https://github.com/shreydesai/apcs/blob/master/List%20Interface.md)
@@ -47,6 +55,9 @@ Additional resources for AP Computer Science:
 ### Algorithms
 * [Sorting Algorithms](https://github.com/shreydesai/apcs/blob/master/Sorting%20Algorithms.md)
 * [Searching Algorithms](https://github.com/shreydesai/apcs/blob/master/Searching%20Algorithms.md)
+
+### Labs
+* [Elevens Lab](https://github.com/shreydesai/apcs/blob/master/Elevens%20Lab%20QA.md)
 
 ## Contributors
 
